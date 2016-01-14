@@ -2,6 +2,8 @@ package slavi.dissertation.applications.console;
 
 import java.util.Scanner;
 
+import slavi.dissertation.applications.console.controller.commands.CommandManager;
+
 /**
  * DissertationConsoleApplication
  *
@@ -18,6 +20,7 @@ public class DissertationConsoleApplication {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String commandLineInput;
+        CommandManager commandManager = new CommandManager();
         
         while (true) {
             commandLineInput = input.nextLine();
