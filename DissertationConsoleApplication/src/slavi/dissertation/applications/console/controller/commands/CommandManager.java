@@ -38,8 +38,6 @@ public class CommandManager implements CommandProcessing {
         }
         
         Commandable command = this.commands.get(commandName);
-        //String[] commandArguments = commandParts;
-        
-        command.processComand("");
+        command.processComand(commandParts);
     }
 }
