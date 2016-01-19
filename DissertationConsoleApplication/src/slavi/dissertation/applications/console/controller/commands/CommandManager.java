@@ -13,14 +13,18 @@ public class CommandManager implements CommandProcessing {
         
         initializeCommands();
     }
-    
+
+    /*
+     * Initialize the commands map with list of commands.
+     * @return nothing
+     */
     private void initializeCommands() {
         commands.put("exit", new CommandExit());
     }
 
     /*
      * Process command from the menu.
-     * @param args unused
+     * @param String commandLineInput
      * @return nothing
      */
     public void processCommand(String commandLineInput) {
