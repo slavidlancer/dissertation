@@ -1,5 +1,6 @@
 package slavi.dissertation.applications.console.controller.commands;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import slavi.dissertation.applications.console.interfaces.CommandProcessing;
@@ -27,5 +28,18 @@ public class CommandManager implements CommandProcessing {
         if (commandLineInput == null) {
             throw new IllegalArgumentException("commandLine");
         }
+        
+        String[] commandParts = commandLineInput.split(" ", 0);
+        String commandName = commandParts[0];
+        
+        if (!this.commands.containsKey(commandName)) {
+            throw new IllegalArgumentException(String.format(
+                    "invalid command name, %s", commandName));
+        }
+        
+        Commandable command = this.commands.get(commandName);
+        //String[] commandArguments = commandParts;
+        
+        command.processComand("");
     }
 }
