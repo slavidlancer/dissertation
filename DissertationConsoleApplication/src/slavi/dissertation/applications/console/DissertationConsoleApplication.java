@@ -1,8 +1,8 @@
 package slavi.dissertation.applications.console;
 
 import java.util.Scanner;
-
-import slavi.dissertation.applications.console.controller.commands.CommandManager;
+import slavi.dissertation.applications.console.controller.commands.
+CommandManager;
 
 /**
  * DissertationConsoleApplication
