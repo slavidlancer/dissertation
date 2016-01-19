@@ -1,6 +1,5 @@
 package slavi.dissertation.applications.console.controller.commands;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import slavi.dissertation.applications.console.interfaces.CommandProcessing;
