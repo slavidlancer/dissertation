@@ -9,6 +9,8 @@ public class CommandManager implements CommandProcessing {
      * @return nothing
      */
     public void processCommand(String commandLineInput) {
-        // TODO Auto-generated method stub
+        if (commandLineInput == null) {
+            throw new IllegalArgumentException("commandLine");
+        }
     }
 }
