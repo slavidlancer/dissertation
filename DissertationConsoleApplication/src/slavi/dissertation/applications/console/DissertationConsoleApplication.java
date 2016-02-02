@@ -24,6 +24,7 @@ public class DissertationConsoleApplication {
         CommandManager commandManager = new CommandManager();
         
         while (true) {
+            System.out.println("enter menu command: ");
             commandLineInput = input.nextLine();
             commandManager.processCommand(commandLineInput);
         }
